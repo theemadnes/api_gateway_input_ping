@@ -1,0 +1,4 @@
+{ "path_parameter": "$input.params('path_parameter')",
+"httpMethod":"$context.httpMethod",
+"body": $input.json('$'),
+"header-params" : "$input.params().header"}

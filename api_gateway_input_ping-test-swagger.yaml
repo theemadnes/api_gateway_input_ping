@@ -1,0 +1,29 @@
+---
+swagger: "2.0"
+info:
+  version: "2016-04-01T02:56:04Z"
+  title: "api_gateway_input_ping"
+host: "your.api.gateway.endpoint"
+basePath: "/test"
+schemes:
+- "https"
+paths:
+  /{path_parameter}:
+    post:
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "path_parameter"
+        in: "path"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/Empty"
+definitions:
+  Empty:
+    type: "object"
