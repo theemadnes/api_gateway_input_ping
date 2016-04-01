@@ -1,7 +1,6 @@
 ## this function updates an item to a shopping cart (identified by cart_id)
 
 from __future__ import print_function
-import boto3
 import json
 import datetime
 
