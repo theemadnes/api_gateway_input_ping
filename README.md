@@ -10,4 +10,5 @@ When creating your API in API Gateway, create a resource with the path {path_par
 Note that the API must be deployed before it functions.
 
 Test your API using the following:
-'curl -H "Content-Type: application/json" -X POST -d '{"foo":"test_string","bar":12345}' https://your.api.gateway.endpoint/API_STAGE_NAME/HELLO_WORLD'
+
+  curl -H "Content-Type: application/json" -X POST -d '{"foo":"test_string","bar":12345}' https://your.api.gateway.endpoint/API_STAGE_NAME/HELLO_WORLD
